@@ -29,6 +29,8 @@ spec:
       labels:
         app: mysql-elastio # has to match .spec.selector.matchLabels
     spec:
+      nodeSelector: 
+        deploy: secondNode
       terminationGracePeriodSeconds: 10
       containers:
       - name: mysql
