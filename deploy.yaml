@@ -31,6 +31,8 @@ spec:
       labels:
         app: pma # has to match .spec.selector.matchLabels
     spec:
+      nodeSelector: 
+        deploy: secondNode
       terminationGracePeriodSeconds: 10
       containers:
       - name: pma
